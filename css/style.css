@@ -38,7 +38,7 @@ body {
 .side-bar img {
  margin-right: 10px;
  position: relative;
- top: -3px;
+ top: 5px;
 }
 
 .side-bar li {
@@ -166,23 +166,43 @@ body {
 }
 
 .main .title {
- width: 120px;
+ display: flex;
+ justify-content: space-between;
+ width:100%;
  margin: auto;
- margin-right: 20px;
- margin-bottom: 0px;
 }
 
 .title button {
+ width: 160px;
+ height: 47px;
  border: none;
- padding: 7px 10px;
  color: white;
  background: #F0A243;
  border-radius: 6px;
+ padding: 0;
 }
 
 .title button a {
  color: white;
  text-decoration: none;
+}
+
+.title .alert {
+ width: 285px;
+ height: 50px;
+ border-radius: 5px;
+ font-weight: normal;
+ font-size: 15px;
+ line-height: 23px;
+ background: #DEF7EB;
+ color: #258066;
+}
+
+.title .alert img {
+ border: 2px solid #258066;
+ padding: 3px;
+ border-radius: 50%;
+ margin-right: 10px;
 }
 
 .upper {
@@ -319,6 +339,7 @@ body {
  margin: 0px;
 }
 
+
 .main tbody button {
  margin: 0;
  padding: 0px;
@@ -393,7 +414,7 @@ body {
  background: white;
  border-radius: 10px;
  box-sizing: border-box;
- height:80vh;
+ /* height: 80vh; */
 }
 
 #modal .wrapper .title {
@@ -457,6 +478,7 @@ body {
  width: 100%;
  margin-bottom: 10px;
 }
+
 #modal form select {
  background: #F5F5F5;
  border: 1px solid rgba(151, 151, 151, 0.37);
@@ -466,6 +488,7 @@ body {
  margin-bottom: 10px;
  height: 28px;
 }
+
 #modal form button {
  background: #FFFFFF;
  border-radius: 5.06567px;
@@ -522,5 +545,191 @@ body {
 }
 
 
-/* ==========modal 2 of 2 */
+/* ===manage residents=====
+===========================
+========================== */
 
+.back h1 {
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 19px;
+ color: #9D9D9D;
+ margin-bottom: 0;
+ margin-top: 10px;
+ padding-bottom: 0;
+}
+
+.show-wrap {
+ margin: auto;
+ width: 95%;
+ background: #FFFFFF;
+ border-radius: 5px;
+ padding-bottom: 70px;
+}
+
+.show-wrap .options {
+ display: flex;
+ align-items: center;
+ color: #474747;
+ background: #FFFFFF;
+ width: 99%;
+ border-bottom: 1px solid rgba(37, 56, 88, 0.09);
+ box-sizing: border-box;
+ padding: 0;
+ margin: auto;
+}
+
+.show-wrap .options h1 {
+ font-weight: normal;
+ margin: 0;
+ font-size: 16px;
+ line-height: 19px;
+ margin-right: 10px;
+ margin-left: 15px;
+ padding: 20px 20px 10px 20px;
+ cursor: pointer;
+}
+
+.show-wrap .options .active {
+ border-bottom: 3px #F0A243 solid;
+ box-sizing: border-box;
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 19px;
+ color: #474747;
+}
+
+.cards {
+ width: 500px;
+ border: 1px solid rgba(182, 182, 182, 0.35);
+ box-sizing: border-box;
+ margin: 30px;
+ margin-top: 0;
+ box-sizing: border-box;
+ background: #FFFFFF;
+ border-radius: 5px;
+ padding: 20px 0;
+}
+
+.info-wrap {
+ display: flex;
+ align-items: start;
+ width: 80%;
+ padding-top: 30px;
+ margin: auto;
+}
+
+.card-wrap .item {
+ display: flex;
+ box-sizing: border-box;
+ justify-content: space-between;
+ width: 70%;
+ margin: auto;
+}
+
+.item h1 {
+ font-style: normal;
+ font-weight: 600;
+ font-size: 16px;
+ line-height: 23px;
+ color: #474747;
+ margin-bottom: 5px;
+}
+
+.item p {
+ margin-top: 3px;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 12px;
+ line-height: 23px;
+ color: #504f4f;
+}
+
+.item div {
+ width: 50%;
+ text-align: left;
+}
+
+.card2 {
+ width: 449.86px;
+ border: 1px solid rgba(182, 182, 182, 0.35);
+ box-sizing: border-box;
+ margin: auto;
+ margin-top: 0;
+ margin-right: 148px;
+ box-sizing: border-box;
+ text-align: left;
+ background: #FFFFFF;
+ border-radius: 5px;
+ padding: 20px 0;
+}
+
+.inside {
+ display: none;
+ background: #FFFFFF;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+ border-radius: 5px;
+ width: 140px;
+ box-sizing: border-box;
+ margin: auto;
+ cursor: pointer;
+ margin-right: 0;
+ position: absolute;
+ right: 132px;
+ top: 20.6%;
+ overflow: hidden;
+}
+
+.inside h1{
+ font-style: normal;
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 19px;
+ color: #474747;
+ margin: 0;
+ padding: 0;
+}
+.inside li{
+ list-style: none;
+ padding:10px 20px;
+}
+
+.inside li:hover {
+ background: #F4F4F4;
+}
+
+.info-wrap button {
+ background: #F4F4F4;
+ border-radius: 5px;
+ font-weight: 700;
+ font-size: 17px;
+ text-align: center;
+ color: #474747;
+ border: none;
+ transform: rotate(90deg);
+ padding: 0px 10px 10px 10px;
+ cursor: pointer;
+ outline: none;
+}
+
+/* success  mssg*/
+.good .alert {
+ width:350px;
+ padding: 10px;
+ border-radius: 5px;
+ font-weight: normal;
+ font-size: 15px;
+ line-height: 23px;
+ background: #DEF7EB;
+ color: #258066;
+ margin: auto;
+ margin-top: 30px;
+ box-sizing: border-box;
+}
+
+.good .alert img {
+ border: 2px solid #258066;
+ padding: 3px;
+ border-radius: 50%;
+ margin-right: 10px;
+}

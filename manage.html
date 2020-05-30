@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Resident</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/style.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+ <section class="all">
+  <!-- SIDE BAR -->
+
+  <section class="side-bar">
+
+   <div class="logo">
+    <img src="img/logo.png" alt="">
+   </div>
+   <div class="list">
+    <ul>
+     <li><img src="img/Vector-5.png" alt=""><a href="#">Overview</a></li>
+     <li><img src="img/Vector-4.png" alt=""><a href="#">Manage Estates</a></li>
+     <li><img src="img/Vector-6.png" alt=""><a href="#">Manage Users</a></li>
+     <li><img src="img/Group (1).png" alt=""><a href="#">Manage Billings</a></li>
+     <li><img src="img/Group 8.png" alt=""><a href="#">Roles & Offices</a></li>
+     <li><img src="img/Group.png" alt=""><a href="#">Accounting</a></li>
+     <li><img src="img/Group 5.png" alt=""><a href="#">Manage Complaints</a></li>
+    </ul>
+   </div>
+
+  </section>
+
+  <section class="main">
+
+   <div class="head">
+    <div class="in">
+     <div class="back">
+      <h1>Go back to Residents</h1>
+     </div>
+     <div class="icon">
+      <img src="img/notification.png" alt="">
+      <img src="img/Group (4).png" alt="">
+      <h2>Administrator</h2>
+      <img src="img/Path.png" alt="">
+     </div>
+    </div>
+   </div>
+   <div class="show-wrap">
+
+    <div class="options">
+     <h1 class="active">Resident Details</h1>
+     <h1>Service Charge</h1>
+     <h1>Utility Purchase</h1>
+    </div>
+    <div class="info-wrap">
+     <img src="img/Ellipse 1.png" alt="">
+     <div class="cards">
+      <div class="card-wrap">
+       <div class="item">
+        <div>
+         <h1>Full Name</h1>
+         <p>John Favour</p>
+        </div>
+        <div>
+         <h1>Email Address</h1>
+         <p>John@gmail.com</p>
+        </div>
+       </div>
+       <div class="item">
+        <div>
+         <h1>Gender</h1>
+         <p>Male</p>
+        </div>
+        <div>
+         <h1>Phone Number</h1>
+         <p>03014693215</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <button id="edit">...</button>
+    </div>
+    <div class="inside">
+     <li><h1>Edit Profile</h1></li>
+     <li onclick="mod()"><h1>Assign Office</h1></li>
+     <li><h1>Set Inactive</h1></li>
+    </div>
+    <div class="card2">
+     <div class="card-wrap">
+      <div class="item">
+       <div>
+        <h1>House Type</h1>
+        <p>2 Bedroom Flat</p>
+       </div>
+       <div>
+        <h1>House Number</h1>
+        <p>p7</p>
+       </div>
+      </div>
+      <div class="item">
+       <div>
+        <h1>Meter Number</h1>
+        <p>516260151</p>
+       </div>
+       <div>
+        <h1>Landlord</h1>
+        <p>Iroko Gbenge</p>
+       </div>
+      </div>
+      <div class="item">
+       <div>
+        <h1>Office Assigned</h1>
+        <p>Secretary</p>
+       </div>
+       <div>
+        <h1>Resident Status</h1>
+        <p>Resident</p>
+       </div>
+      </div>
+     </div>
+    
+
+   </div>
+   
+
+
+
+   <section id="modal">
+    <div class="wrapper">
+  
+     <div class="title">
+      <h1>Assign Office</h1>
+      <div id="close">
+       <img src="img/x (1).png" alt="">
+      </div>
+     </div>
+  
+  
+     <!-- screen 2 of 2 -->
+  
+    
+     <form action="post">
+  
+      <label for="lastname">Office</label>
+      <select>
+       <option value="">Select Office</option>
+       <option value=""></option>
+       <option value=""></option>
+      </select>
+     </form>
+  
+     <div class="act">
+      <button id="cancel">Cancel</button>
+      <button>Assign</button>
+     </div>
+  
+  
+     <!-- screen 1 of 2 -->
+  
+     <!-- <div class="info">
+      <h1>Tenant Information</h1>
+      <p>Step 1 of 2</p>
+     </div> -->
+     <!-- 
+     <form action="post">
+      <label for="firstname">First Name</label>
+      <input type="text">
+  
+      <label for="lastname">Last Name</label>
+      <input type="text">
+  
+      <label for="email">Email Address</label>
+      <input type="text">
+  
+      <label for="phone">Phone Number</label>
+      <input type="text">
+  
+      <label for="moved">Moved In</label>
+      <input type="date" placeholder="Select Date">
+  
+      <label for="Gender">Gender</label>
+      <button class="b1">Male</button>
+      <button>Female</button>
+  
+     </form> -->
+  
+     <!-- <div class="act">
+      <button id="cancel">Cancel</button>
+      <button>Proceed</button>
+     </div> -->
+  
+  
+    </div>
+   </section>
+   <div class="good">
+    <div class="alert alert-primary" role="alert">
+     <img src="img/Vector 11.png" alt="">
+     Successfully Assigned to Secretary Office
+    </div>
+   </div>
+  </section>
+ </section>
+
+ <script src="scrip.js"></script>
+</body>
+
+</html>
