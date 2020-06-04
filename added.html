@@ -1,468 +1,468 @@
 <!DOCTYPE html>
 
 <head>
- <meta charset="utf-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Resident</title>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
- <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="css/style.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resident</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
- <section class="all">
-  <!-- SIDE BAR -->
+  <section class="all">
+    <!-- SIDE BAR -->
 
-  <section class="side-bar">
+    <section class="side-bar">
 
-   <div class="logo">
-    <img src="img/logo.png" alt="">
-   </div>
-   <div class="list">
-    <ul>
-     <li><img src="img/Vector-5.png" alt=""><a href="#">Overview</a></li>
-     <li><img src="img/Vector-4.png" alt=""><a href="#">Manage Estates</a></li>
-     <li><img src="img/Vector-6.png" alt=""><a href="#">Manage Users</a></li>
-     <li><img src="img/Group (1).png" alt=""><a href="#">Manage Billings</a></li>
-     <li><img src="img/Group 8.png" alt=""><a href="#">Roles & Offices</a></li>
-     <li><img src="img/Group.png" alt=""><a href="#">Accounting</a></li>
-     <li><img src="img/Group 5.png" alt=""><a href="#">Manage Complaints</a></li>
-    </ul>
-   </div>
+      <div class="logo">
+        <img src="img/logo.png" alt="">
+      </div>
+      <div class="list">
+        <ul>
+          <li><img src="img/Vector-5.png" alt=""><a href="#">Overview</a></li>
+          <li><img src="img/Vector-4.png" alt=""><a href="#">Manage Estates</a></li>
+          <li><img src="img/Vector-6.png" alt=""><a href="#">Manage Users</a></li>
+          <li><img src="img/Group (1).png" alt=""><a href="#">Manage Billings</a></li>
+          <li><img src="img/Group 8.png" alt=""><a href="#">Roles & Offices</a></li>
+          <li><img src="img/Group.png" alt=""><a href="#">Accounting</a></li>
+          <li><img src="img/Group 5.png" alt=""><a href="#">Manage Complaints</a></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="main">
+
+      <div class="head">
+        <div class="in">
+          <div class="comp">
+            <h1>Residents</h1>
+          </div>
+          <div class="icon">
+            <img src="img/notification.png" alt="">
+            <img src="img/Group (4).png" alt="">
+            <h2>Administrator</h2>
+            <img src="img/Path.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="title">
+        <div class="alert alert-primary" role="alert">
+          <img src="img/Vector 11.png" alt="">
+          Successfully Added Residents
+        </div>
+        <button id="add"><a>+ Add Resident</a></button>
+      </div>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+            aria-selected="true">Resident</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+            aria-selected="false">Landlord</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="upper">
+            <div class="input-wrapper">
+              <img src="img/Group (3).png" alt="">
+              <input type="text" placeholder="Seach..">
+            </div>
+            <div class="filter">
+              <li>
+                Filter
+                <img src="img/Group 7189.png" alt="">
+              </li>
+            </div>
+          </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email Address</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Landlord Name</th>
+                <th scope="col">Moved In</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="upper">
+            <div class="input-wrapper">
+              <img src="img/Group (3).png" alt="">
+              <input type="text" placeholder="Seach..">
+            </div>
+            <div class="filter">
+              <li>
+                Filter
+                <img src="img/Group 7189.png" alt="">
+              </li>
+            </div>
+          </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email Address</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Landlord Name</th>
+                <th scope="col">Moved In</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>John</td>
+                <td>Favour</td>
+                <td>john@gmail.com</td>
+                <td>09015235645</td>
+                <td>Micheal Obadara</td>
+                <td>18/03/2020</td>
+                <td>
+                  <p class="status">Active</p>
+                </td>
+                <td><button>...</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="pagin">
+        <h5>Showing 1 to 10 of 20 entries</h5>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true"><img src="img/Back (1).png" alt=""></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true"><img src="img/Back.png" alt=""></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
 
   </section>
 
-  <section class="main">
+  <section id="modal">
+    <div class="wrapper">
 
-   <div class="head">
-    <div class="in">
-     <div class="comp">
-      <h1>Residents</h1>
-     </div>
-     <div class="icon">
-      <img src="img/notification.png" alt="">
-      <img src="img/Group (4).png" alt="">
-      <h2>Administrator</h2>
-      <img src="img/Path.png" alt="">
-     </div>
-    </div>
-   </div>
-
-   <div class="title">
-    <div class="alert alert-primary" role="alert">
-     <img src="img/Vector 11.png" alt="">
-     Successfully Added Residents
-    </div>
-    <button id="add"><a>+ Add Resident</a></button>
-   </div>
-   <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item">
-     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-      aria-selected="true">Resident</a>
-    </li>
-    <li class="nav-item">
-     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-      aria-selected="false">Landlord</a>
-    </li>
-   </ul>
-   <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-     <div class="upper">
-      <div class="input-wrapper">
-       <img src="img/Group (3).png" alt="">
-       <input type="text" placeholder="Seach..">
+      <div class="title">
+        <h1>Add Resident</h1>
+        <div id="close">
+          <img src="img/x (1).png" alt="">
+        </div>
       </div>
-      <div class="filter">
-       <li>
-        Filter
-        <img src="img/Group 7189.png" alt="">
-       </li>
+
+
+      <!-- screen 2 of 2 -->
+
+      <div class="info">
+        <h1>Apartment Information</h1>
+        <p>Step 1 of 2</p>
       </div>
-     </div>
-     <table class="table table-striped">
-      <thead>
-       <tr>
-        <th scope="col">#</th>
-        <th scope="col">First Name</th>
-        <th scope="col">Last Name</th>
-        <th scope="col">Email Address</th>
-        <th scope="col">Phone Number</th>
-        <th scope="col">Landlord Name</th>
-        <th scope="col">Moved In</th>
-        <th scope="col">Status</th>
-        <th scope="col">Actions</th>
-       </tr>
-      </thead>
-      <tbody>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-      </tbody>
-     </table>
-    </div>
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-     <div class="upper">
-      <div class="input-wrapper">
-       <img src="img/Group (3).png" alt="">
-       <input type="text" placeholder="Seach..">
+      <form action="post">
+        <label for="firstname">Apartment <Address></Address></label>
+        <input type="text">
+
+        <label for="lastname">Apartment Type</label>
+        <select>
+          <option value="">Select Type</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </form>
+
+      <div class="act">
+        <button id="cancel">Cancel</button>
+        <button>Save</button>
       </div>
-      <div class="filter">
-       <li>
-        Filter
-        <img src="img/Group 7189.png" alt="">
-       </li>
-      </div>
-     </div>
-     <table class="table table-striped">
-      <thead>
-       <tr>
-        <th scope="col">#</th>
-        <th scope="col">First Name</th>
-        <th scope="col">Last Name</th>
-        <th scope="col">Email Address</th>
-        <th scope="col">Phone Number</th>
-        <th scope="col">Landlord Name</th>
-        <th scope="col">Moved In</th>
-        <th scope="col">Status</th>
-        <th scope="col">Actions</th>
-       </tr>
-      </thead>
-      <tbody>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-       <tr>
-        <th scope="row"></th>
-        <td>John</td>
-        <td>Favour</td>
-        <td>john@gmail.com</td>
-        <td>09015235645</td>
-        <td>Micheal Obadara</td>
-        <td>18/03/2020</td>
-        <td>
-         <p class="status">Active</p>
-        </td>
-        <td><button>...</button></td>
-       </tr>
-      </tbody>
-     </table>
-    </div>
-   </div>
-
-   <div class="pagin">
-    <h5>Showing 1 to 10 of 20 entries</h5>
-    <nav aria-label="Page navigation example">
-     <ul class="pagination">
-      <li class="page-item">
-       <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true"><img src="img/Back (1).png" alt=""></span>
-        <span class="sr-only">Previous</span>
-       </a>
-      </li>
-      <li class="page-item"><a class="page-link active" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-       <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true"><img src="img/Back.png" alt=""></span>
-        <span class="sr-only">Next</span>
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </div>
-  </section>
 
 
- </section>
+      <!-- screen 1 of 2 -->
 
- <section id="modal">
-  <div class="wrapper">
-
-   <div class="title">
-    <h1>Add Resident</h1>
-    <div id="close">
-     <img src="img/x (1).png" alt="">
-    </div>
-   </div>
-
-
-   <!-- screen 2 of 2 -->
-
-   <div class="info">
-    <h1>Apartment Information</h1>
-    <p>Step 1 of 2</p>
-   </div>
-   <form action="post">
-    <label for="firstname">Apartment <Address></Address></label>
-    <input type="text">
-
-    <label for="lastname">Apartment Type</label>
-    <select>
-     <option value="">Select Type</option>
-     <option value=""></option>
-     <option value=""></option>
-    </select>
-   </form>
-
-   <div class="act">
-    <button id="cancel">Cancel</button>
-    <button>Save</button>
-   </div>
-
-
-   <!-- screen 1 of 2 -->
-
-   <!-- <div class="info">
+      <!-- <div class="info">
     <h1>Tenant Information</h1>
     <p>Step 1 of 2</p>
    </div> -->
-   <!-- 
+      <!-- 
    <form action="post">
     <label for="firstname">First Name</label>
     <input type="text">
@@ -485,16 +485,16 @@
 
    </form> -->
 
-   <!-- <div class="act">
+      <!-- <div class="act">
     <button id="cancel">Cancel</button>
     <button>Proceed</button>
    </div> -->
 
 
-  </div>
- </section>
+    </div>
+  </section>
 
- <script src="scrip.js"></script>
+  <script src="scrip.js"></script>
 </body>
 
 </html>

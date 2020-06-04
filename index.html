@@ -53,6 +53,10 @@
    </div>
 
    <div class="title">
+    <!-- <div class="alert alert-danger" role="alert">
+      <img src="img/bin.png" alt="">
+       Record Deleted Successfully
+    </div> -->
     <button id="add"><a>+ Add Resident</a></button>
    </div>
    <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -105,7 +109,12 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
+        <div class="inside">
+          <li><h1>View Resident</h1></li>
+          <li onclick="del()"><h1>Delete Resident</h1></li>
+          <li><h1>Set Inactive</h1></li>
+         </div>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -118,7 +127,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -131,7 +140,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -144,7 +153,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -157,7 +166,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -170,7 +179,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -183,7 +192,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -196,7 +205,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -209,7 +218,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -222,7 +231,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
        </tr>
       </tbody>
      </table>
@@ -266,7 +275,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td><button class="view">...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -279,7 +288,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td><button class="view">...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -292,7 +301,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td><button class="view">...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -305,7 +314,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td><button class="view">...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -318,7 +327,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td><button class="view">...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -331,7 +340,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td><button class="view">...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -344,7 +353,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td><button class="view">...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -357,7 +366,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td><button class="view">...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -370,7 +379,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
        </tr>
        <tr>
         <th scope="row"></th>
@@ -383,7 +392,7 @@
         <td>
          <p class="status">Active</p>
         </td>
-        <td><button>...</button></td>
+        <td  class="view"><button>...</button></td>
        </tr>
       </tbody>
      </table>
@@ -420,19 +429,35 @@
  <section id="modal">
   <div class="wrapper">
 
+
+   <!-- delete screen -->
    <div class="title">
-    <h1>Add Resident</h1>
+    <h1>Delete Record</h1>
     <div id="close">
      <img src="img/x (1).png" alt="">
     </div>
    </div>
+   <div class="warn">
+    <p>Are you sure you want to delete the record? You can not retrieve the record after delete.</p>
+   </div>
+   <div class="act">
+    <button id="cancel">Cancel</button>
+    <button>Delete</button>
+   </div>
 
 
    <!-- screen 2 of 2 -->
+    <!-- <div class="title">
+    <h1>Add Resident</h1>
+    <div id="close">
+     <img src="img/x (1).png" alt="">
+    </div>
+   </div> -->
 
-   <div class="info">
+
+   <!-- <div class="info">
     <h1>Apartment Information</h1>
-    <p>Step 1 of 2</p>
+    <p>Step 2 of 2</p>
    </div>
    <form action="post">
     <label for="firstname">Apartment <Address></Address></label>
@@ -449,10 +474,17 @@
    <div class="act">
     <button id="cancel">Cancel</button>
     <button>Save</button>
-   </div>
+   </div> -->
 
 
    <!-- screen 1 of 2 -->
+
+     <!-- <div class="title">
+    <h1>Add Resident</h1>
+    <div id="close">
+     <img src="img/x (1).png" alt="">
+    </div>
+   </div> -->
 
    <!-- <div class="info">
     <h1>Tenant Information</h1>

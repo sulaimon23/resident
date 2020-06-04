@@ -13,6 +13,11 @@ body {
  overflow: hidden;
 }
 
+button {
+ outline: none !important;
+}
+
+
 /* side-bar */
 
 .side-bar {
@@ -38,7 +43,6 @@ body {
 .side-bar img {
  margin-right: 10px;
  position: relative;
- top: 5px;
 }
 
 .side-bar li {
@@ -168,7 +172,7 @@ body {
 .main .title {
  display: flex;
  justify-content: space-between;
- width:100%;
+ width: 100%;
  margin: auto;
 }
 
@@ -180,6 +184,8 @@ body {
  background: #F0A243;
  border-radius: 6px;
  padding: 0;
+ margin: auto;
+ margin-right: 20px;
 }
 
 .title button a {
@@ -187,7 +193,7 @@ body {
  text-decoration: none;
 }
 
-.title .alert {
+.title .alert-primary {
  width: 285px;
  height: 50px;
  border-radius: 5px;
@@ -198,10 +204,26 @@ body {
  color: #258066;
 }
 
-.title .alert img {
+.title .alert-primary img {
  border: 2px solid #258066;
  padding: 3px;
  border-radius: 50%;
+ margin-right: 10px;
+}
+
+.title .alert-danger {
+ width: 285px;
+ height: 50px;
+ font-weight: normal;
+ font-size: 15px;
+ line-height: 23px;
+ background: #FFDADA;
+ color: #EE1414;
+ margin-left: 22px;
+}
+
+.title .alert-danger img {
+ padding: 3px;
  margin-right: 10px;
 }
 
@@ -680,7 +702,7 @@ body {
  overflow: hidden;
 }
 
-.inside h1{
+.inside h1 {
  font-style: normal;
  font-weight: normal;
  font-size: 16px;
@@ -689,9 +711,10 @@ body {
  margin: 0;
  padding: 0;
 }
-.inside li{
+
+.inside li {
  list-style: none;
- padding:10px 20px;
+ padding: 10px 20px;
 }
 
 .inside li:hover {
@@ -712,9 +735,15 @@ body {
  outline: none;
 }
 
+.warn {
+ width: 90%;
+ margin: auto;
+ margin-top: 20px;
+}
+
 /* success  mssg*/
 .good .alert {
- width:350px;
+ width: 350px;
  padding: 10px;
  border-radius: 5px;
  font-weight: normal;
